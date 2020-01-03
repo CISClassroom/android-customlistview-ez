@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CustomlistView</string>
+    <string name="app_name">Ez : CustomlistView</string>
+
+    <string-array name="student_name">
+        <item>แมววว</item>
+        <item>หมาา</item>
+    </string-array>
 </resources>
