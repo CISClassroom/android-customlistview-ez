@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             //get text from listview by position
             val itemText = parent.getItemAtPosition(position) as String
             //display toast message
-            Toast.makeText(this,itemText.toString(),Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,itemText.toString(),Toast.LENGTH_SHORT).show()
             //open new Activity
             val i = Intent(this, ProfileActivity::class.java)
             //sent data to new activity
