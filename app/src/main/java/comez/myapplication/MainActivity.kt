@@ -2,6 +2,8 @@ package comez.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,5 +14,11 @@ class MainActivity : AppCompatActivity() {
         val name = arrayOf(
             "OOP", "JAVA", "KOTLIN"
         )
+        // data -> Adapter -> View. listview
+        val mylistview = findViewById<ListView>(R.id.mylistview)
+        val arrayAdapter: ArrayAdapter<*>
+        arrayAdapter = ArrayAdapter(this,
+            android.R.layout.simple_list_item_1, name)
+        mylistview.adapter = arrayAdapter // as ListAdapter
     }
 }
