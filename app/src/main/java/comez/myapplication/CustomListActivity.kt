@@ -3,6 +3,7 @@ package comez.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
+import android.widget.Toast
 import comez.myapplication.Adapter.StudentAdapter
 import comez.myapplication.Model.Student
 
@@ -23,5 +24,9 @@ class CustomListActivity : AppCompatActivity() {
 
         listview.adapter = StudentAdapter(this,
             R.layout.listitem_student,students)
+
+        listview.setOnItemClickListener { parent, view, position, id ->
+            Toast.makeText(this,position,Toast.LENGTH_SHORT).show()
+        }
     }
 }
