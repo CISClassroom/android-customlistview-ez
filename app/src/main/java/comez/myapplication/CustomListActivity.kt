@@ -26,7 +26,7 @@ class CustomListActivity : AppCompatActivity() {
             R.layout.listitem_student,students)
 
         listview.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this,position,Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,position.toString(),Toast.LENGTH_SHORT).show()
         }
     }
 }
