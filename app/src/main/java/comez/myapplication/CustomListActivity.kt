@@ -15,14 +15,13 @@ class CustomListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_list)
 
-        var student:Student = Student("Wannaphong Phatthiyaphaibun","603410214-3",R.drawable.wannaphong)
-
         var students = mutableListOf<Student>()
 
-        students.add(student)
+        students.add(Student("วรรณพงษ์ ภัททิยไพบูลย์","603410214-3",R.drawable.wannaphong))
+
         students.add(Student("นายนฤเบศร์ พนะโรจน์","603410047-6",R.drawable.pro))
         students.add(Student("สิรินาถ จริยพันธ์","603410221-6",R.drawable.ff))
-        students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.drawable.phai))
+        students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.drawable.ff))
 
 
         var listview:ListView = findViewById(R.id.customlistview)
