@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SirinatActivity"></activity>
         <activity android:name=".PhaiActivity"></activity>
         <activity android:name=".mark"></activity>
         <activity android:name=".wannaphong.Wannaphong"></activity>
