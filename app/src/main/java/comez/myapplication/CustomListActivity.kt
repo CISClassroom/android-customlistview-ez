@@ -22,7 +22,7 @@ class CustomListActivity : AppCompatActivity() {
         students.add(student)
         students.add(Student("Mark","00",R.mipmap.ic_launcher))
         students.add(Student("Sirinat","00",R.mipmap.ic_launcher))
-        students.add(Student("Phai","00",R.mipmap.ic_launcher))
+        students.add(Student("Panat kum-in","603410319-9",R.drawable.phai))
 
         var listview:ListView = findViewById(R.id.customlistview)
 

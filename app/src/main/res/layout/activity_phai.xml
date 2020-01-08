@@ -10,9 +10,10 @@
         android:id="@+id/imageView7"
         android:layout_width="850dp"
         android:layout_height="740dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ppp"
-        tools:layout_editor_absoluteX="-222dp"
-        tools:layout_editor_absoluteY="-4dp" />
+        tools:layout_editor_absoluteX="-222dp" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -23,21 +24,32 @@
         app:srcCompat="@drawable/bg2" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="315dp"
-        android:layout_height="358dp"
+        android:id="@+id/imageView8"
+        android:layout_width="311dp"
+        android:layout_height="347dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/profile" />
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/phai" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="28dp"
+        android:text="รหัสนักศึกษา 603410319-9"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="112dp"
         android:text="Panat Kum-in"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -49,41 +61,19 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="32dp"
         android:text="นาย ปาณัสม์ คำอินทร์"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="24dp"
-        android:text="รหัสนักศึกษา 603410319-9"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="36dp"
-        android:text="Github github.com/phaicblack"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
         android:text="E-mail panatk@kkumail.com"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,11 +83,22 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="72dp"
         android:text="สาขา วิทยาการคอมพิวเตอร์"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:text="Github github.com/phaicblack"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
