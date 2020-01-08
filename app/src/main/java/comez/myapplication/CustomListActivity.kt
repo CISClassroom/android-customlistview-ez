@@ -20,14 +20,9 @@ class CustomListActivity : AppCompatActivity() {
         var students = mutableListOf<Student>()
 
         students.add(student)
-
-        students.add(Student("Mark","00",R.mipmap.ic_launcher))
-        students.add(Student("Sirinat","00",R.mipmap.ic_launcher))
-        students.add(Student("Panat kum-in","603410319-9",R.drawable.phai))
-
         students.add(Student("นายนฤเบศร์ พนะโรจน์","603410047-6",R.drawable.pro))
         students.add(Student("สิรินาถ จริยพันธ์","603410221-6",R.drawable.ff))
-        students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.mipmap.ic_launcher))
+        students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.drawable.phai))
 
 
         var listview:ListView = findViewById(R.id.customlistview)
