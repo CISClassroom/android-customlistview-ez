@@ -29,7 +29,13 @@ public class StudentAdapter(val mCtx: Context,
 
         name.text = student.name
         id.text = student.id
-        icon.setImageDrawable(mCtx.getDrawable(student.icon))
+        try {
+            icon.setImageDrawable(mCtx.getDrawable(student.icon))
+        }
+        catch (ex:Exception){
+
+        }
+
         return v
     }
 }
