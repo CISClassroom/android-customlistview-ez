@@ -7,29 +7,26 @@ import android.widget.Toast
 import comez.myapplication.Adapter.StudentAdapter
 import comez.myapplication.Model.Student
 
-class CustomlistActivity : AppCompatActivity() {
+class CustomListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_customlist)
+        setContentView(R.layout.activity_custom_list)
 
-        var student: Student = Student("suaty", "001", R.mipmap.ic_launcher)
+        var student:Student = Student("Wannaphong","603410214-3",R.mipmap.ic_launcher)
+
         var students = mutableListOf<Student>()
 
         students.add(student)
-        students.add(Student("mark", "002", R.mipmap.ic_launcher))
+        students.add(Student("M","02",R.mipmap.ic_launcher))
 
-        var listView: ListView = findViewById(R.id.customlistView)
-        listView.adapter = StudentAdapter(this, R.layout.listitem_student, students)
+        var listview:ListView = findViewById(R.id.customlistview)
 
-        listView.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(
-                this, position.toString(),
-                Toast.LENGTH_SHORT
-            ).show()
+        listview.adapter = StudentAdapter(this,
+            R.layout.listitem_student,students)
+
+        listview.setOnItemClickListener { parent, view, position, id ->
+            Toast.makeText(this,position.toString(),Toast.LENGTH_SHORT).show()
         }
     }
 }
-
-
-
