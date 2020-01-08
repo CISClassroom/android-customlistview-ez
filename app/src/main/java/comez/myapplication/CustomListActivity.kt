@@ -21,8 +21,12 @@ class CustomListActivity : AppCompatActivity() {
 
         students.add(Student("นายนฤเบศร์ พนะโรจน์","603410047-6",R.drawable.pro))
         students.add(Student("สิรินาถ จริยพันธ์","603410221-6",R.drawable.ff))
+
+        students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.drawable.phai))
+
         students.add(Student("นายปาณัสม์ คำอินทร์","603410319-9",R.drawable.ff))
         students.add(Student("ฟ้า","**",R.drawable.ff))
+
 
 
         var listview:ListView = findViewById(R.id.customlistview)
