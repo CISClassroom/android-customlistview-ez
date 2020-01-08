@@ -1,11 +1,13 @@
 package comez.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import android.widget.Toast
 import comez.myapplication.Adapter.StudentAdapter
 import comez.myapplication.Model.Student
+import comez.myapplication.wannaphong.Wannaphong
 
 class CustomListActivity : AppCompatActivity() {
 
@@ -13,7 +15,7 @@ class CustomListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_list)
 
-        var student:Student = Student("Wannaphong","603410214-3",R.mipmap.ic_launcher)
+        var student:Student = Student("Wannaphong Phatthiyaphaibun","603410214-3",R.drawable.wannaphong)
 
         var students = mutableListOf<Student>()
 
@@ -26,7 +28,12 @@ class CustomListActivity : AppCompatActivity() {
             R.layout.listitem_student,students)
 
         listview.setOnItemClickListener { parent, view, position, id ->
-            Toast.makeText(this,position.toString(),Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,position.toString(),Toast.LENGTH_SHORT).show()
+            if(position==0){
+                var i = Intent(this,Wannaphong::class.java)
+                startActivity(i)
+            }
+
         }
     }
 }
