@@ -22,6 +22,7 @@ class CustomListActivity : AppCompatActivity() {
         students.add(student)
         students.add(Student("Mark","00",R.mipmap.ic_launcher))
         students.add(Student("Sirinat","00",R.mipmap.ic_launcher))
+        students.add(Student("Phai","00",R.mipmap.ic_launcher))
 
         var listview:ListView = findViewById(R.id.customlistview)
 
@@ -40,6 +41,10 @@ class CustomListActivity : AppCompatActivity() {
             }
             else if(position==2){
                 var i = Intent(this,SirinatActivity::class.java)
+                startActivity(i)
+            }
+            else if(position==3){
+                var i = Intent(this,PhaiActivity::class.java)
                 startActivity(i)
             }
 
